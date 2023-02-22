@@ -102,7 +102,7 @@ body {
     padding: 20px 0;
 
     height: calc(100% - 60px);
-    overflow-y: auto;
+    overflow-x: auto;
 
     left: 100%;
     transition: left 0.3s;
