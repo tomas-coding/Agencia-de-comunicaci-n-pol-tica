@@ -6,15 +6,18 @@
 body {
   font-family: sans-serif;
   padding: 90px 20px 0;
+  background-color:#7f8c8d;
+  color: white;
 }
 
 .header {
-  background-color: #0769e9;
+  background-color: #2980b9;
   height: 80px;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
+  position: fixed;
 }
 
 .nav {
@@ -95,7 +98,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0;
-    background-color: #2c3e50;
+    background-color: #7f8c8d;
     position: fixed;
     top: 60px;
     width: 100%;
@@ -130,3 +133,27 @@ body {
     outline: none;
   }
 }
+/* estilos para header en efecto scroll */
+header.small {
+  background-color: #7f8c8d;
+  font-size: 20px;
+}
+/* estilos para para card de quien somos */
+.card_about_us{
+  display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 35vh;
+    margin: 50px 10vw;
+    padding: 0px 10vw;
+    background-color: #2980b9;
+    border-radius: 15px;
+    color: white;
+}
+.card_about_us hr {
+  border: 1px solid white;
+  width: 100%;
+}
+.card_about_us p {
+  text-align: center;}
