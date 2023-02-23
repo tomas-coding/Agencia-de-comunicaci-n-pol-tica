@@ -4,22 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script
+      src="https://kit.fontawesome.com/7e5b2d153f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="index.js"></script>
+    <title>Document</title>
   </head>
   <body>
     <!-- HEADER-->
-    <header>
-      <!--logo-->
-      <section class="menu">
-        <article>
-      <img class="logo-menta"
-      src="./img/logo_menta_web_03.png" alt="logo" />
-      <img src="./img/icon-hamburger.svg" alt="menu-mobile" />
-    </article>
-    </section>
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="logo nav-link">Logo</a>
+        <button class="nav-toggle" aria-label="Abrir menú">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="#" class="nav-menu-link nav-link">Inicio</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#que_hacemos" class="nav-menu-link nav-link">Que hacemos</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#Producto" class="nav-menu-link nav-link">Producto</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#Contacto" class="nav-menu-link nav-link nav-menu-link_active"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
     
+    
+    <!-- MAIN -->
     <main>
       <section class="principal-menu flex">
       <article>
@@ -53,8 +74,8 @@
         </p>
       </article>
     </section>
-    <!-- QUE HACEMOS
-    <section>
+    <!-- QUE HACEMOS-->
+    <section id="que_hacemos">
       <h3>QUÉ HACEMOS</h3>
       <article>
         <h4>Prensa</h4>
@@ -93,8 +114,8 @@
         </p>
       </article>
     </section>
-    <!-- PRODUCTOS
-    <section>
+    <!-- PRODUCTOS-->
+    <section id="Producto">
       <h3>PRODUCTOS</h3>
       <article>
         <!--imagen      
@@ -107,8 +128,8 @@
       </article>
     </section>
 
-    <!-- CONTACTOS
-    <section>
+    <!-- CONTACTOS-->
+    <section id="Contacto">
       <h3>CONTACTO</h3>
       <article>
         <!--ubicacion-->
@@ -122,6 +143,7 @@
         </article>
     </section>
     <!-- FOOTER-->
-  
+    <!-- referencias JavasScript-->
+    <script src="./script/srcipt.js"></script>
   </body>
 </html>
