@@ -1,0 +1,21 @@
+* {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  
+}
+
+.logo-menta {
+  width: 100px;
+}
+
+.menu {
+    width: 480px;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.principal-menu {
+    flex-wrap: wrap;
+}
