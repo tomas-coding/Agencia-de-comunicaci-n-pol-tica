@@ -1,13 +1,25 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.flex {
+  display: flex;
 }
 
 body {
-  font-family: sans-serif;
   padding: 90px 20px 0;
 }
 
+.background {
+  background-image: url(/img/wallpaper-panel-oscuro.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 500px;
+  color: antiquewhite;
+}
 .header {
   background-color: #0769e9;
   height: 80px;
@@ -129,4 +141,19 @@ body {
   .nav-toggle:focus:not(:focus-visible) {
     outline: none;
   }
+}
+
+.principal {
+/* flex-wrap: nowrap; */
+flex-direction: column;
+align-items: center;
+padding: 30px;
+}
+
+#que_hacemos {
+background-color: black;
+flex-direction: column;
+align-items: center;
+padding: 30px;
+color: antiquewhite;
 }
