@@ -20,7 +20,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 500px;
-  color: antiquewhite;
+  color: #c0392b;
 }
 .header {
   background-color: #2980b9;
@@ -146,24 +146,42 @@ body {
   }
 }
 
+h1 {
+  font-size: 70px;
+  padding-bottom: 10px;
+  color: #7f8c8d;
+  text-shadow: 2px 2px 2px #374647;
+  text-align: center;
+}
 .principal {
 /* flex-wrap: nowrap; */
 flex-direction: column;
 align-items: center;
 padding: 30px;
+color: #7f8c8d;
+/* font-size: 30px; */
+}
+
+.card_productora {
+font-size: 25px;
+text-align: center;
+}
+
+.padding {
+  padding-bottom: 25px;
 }
 
 #que_hacemos {
 background-color: black;
 flex-direction: column;
 align-items: center;
-padding: 30px;
-color: antiquewhite;
+color: #7f8c8d;
+font-size: 25px;
 }
 /* estilos para header en efecto scroll */
 header.small {
   background-color: #7f8c8d;
-  font-size: 20px;
+  font-size: 10px;
 }
 /* estilos para para card de quien somos */
 .card_about_us{
