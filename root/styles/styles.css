@@ -17,13 +17,8 @@ body {
   color: white;
 }
 
-.background {
 
-  height: 500px;
-  color: #c0392b;
-}
 .header {
-  background-color: #2980b9;
   height: 80px;
   position: fixed;
   width: 100%;
