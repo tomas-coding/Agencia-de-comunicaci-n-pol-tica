@@ -9,16 +9,26 @@
 }
 
 body {
-  background-image: url(../img/wallpaper-panel.jpg);
+  padding: 200px 20px 0;
+  /* background-color:#7f8c8d; */
+  color: white;
+  background-image: url(/img/wallpaper-panel.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 230% 100%;
+  height: 100%;
+
+}
+
+.background {
+  /* background-image: url(/img/wallpaper-panel-oscuro.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding: 90px 20px 0;
-  color: white;
+  height: 100%; */
 }
-
-
 .header {
+  background-color: #181C28;
   height: 80px;
   position: fixed;
   width: 100%;
@@ -157,22 +167,16 @@ color: #7f8c8d;
 /* font-size: 30px; */
 }
 
+.title{
+  height: 35vh;
+  margin: 50px 10vw;
+  padding: 0px 10vw;
+}
 .card_productora {
 font-size: 25px;
 text-align: center;
 }
 
-.padding {
-  padding-bottom: 25px;
-}
-
-#que_hacemos {
-background-color: black;
-flex-direction: column;
-align-items: center;
-color: #7f8c8d;
-font-size: 25px;
-}
 /* estilos para header en efecto scroll */
 header.small {
   background-color: #7f8c8d;
@@ -187,7 +191,7 @@ header.small {
     height: 35vh;
     margin: 50px 10vw;
     padding: 0px 10vw;
-    background-color: #2980b9;
+    background-color: #A08344;
     border-radius: 15px;
     color: white;
 }
@@ -197,3 +201,37 @@ header.small {
 }
 .card_about_us p {
   text-align: center;}
+
+
+#que_hacemos {
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    color: #7f8c8d;
+    font-size: 25px;
+    height: 100%;
+    margin: 50px 5vw;
+    }
+.card_what_we_do {
+  justify-content: space-evenly;
+  align-items: center;
+  /* height: 20vh; */
+  padding: 30px 5vw;
+  color: white;  
+  height: 100%;
+}
+
+
+.titles {
+  font-size: 30px;
+  padding: 70px 0px 0px ;
+  color: #7f8c8d;
+text-align: center; 
+}
+
+.expertisse {
+ align-items: center;
+ width: 20%;
+
+  /* height: 20%; */
+}
