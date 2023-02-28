@@ -1,0 +1,22 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "| Nombre    | Funcion               | Mail             | Github     |\r | --------- | --------------------- | ---------------- | ---------- |\r | Maria Brun Lubatti     | Desarrollo   | mariabrunlubatti@gmail.com | [/brunmaria](https://github.com/brunmaria)   |\r | Tomas Lovato       | Desarrollo    | prueba@gmail.com | [/tomas-coding](https://github.com/tomas-coding)  |\r | Jorge Rivera      | Desarrollo    | jorgejoaquinrivera@gmail.com | [/Yoryao](https://github.com/yoryao)  |",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomas-coding/Agencia-de-comunicaci-n-pol-tica.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomas-coding/Agencia-de-comunicaci-n-pol-tica/issues"
+  },
+  "homepage": "https://github.com/tomas-coding/Agencia-de-comunicaci-n-pol-tica#readme",
+  "dependencies": {
+    "nodemailer": "^6.9.1"
+  }
+}

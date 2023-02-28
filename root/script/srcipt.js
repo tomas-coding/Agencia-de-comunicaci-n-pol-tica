@@ -1,50 +1,63 @@
-// const navToggle = document.querySelector(".nav-toggle");
-// const navMenu = document.querySelector(".nav-menu");
+const navToggle = document.querySelector(".nav-toggle");
+const navMenu = document.querySelector(".nav-menu");
 
-// navToggle.addEventListener("click", () => {
-//   navMenu.classList.toggle("nav-menu_visible");
+navToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("nav-menu_visible");
 
-//   if (navMenu.classList.contains("nav-menu_visible")) {
-//     navToggle.setAttribute("aria-label", "Cerrar menú");
-//   } else {
-//     navToggle.setAttribute("aria-label", "Abrir menú");
-//   }
-// });
-// //efecto de scroll en header
-// window.addEventListener('scroll', function() {
-//   var header = document.querySelector('header');
-//   if (window.scrollY >= 100) {
-//     header.classList.add('small');
-//   } else {
-//     header.classList.remove('small');
-//   }
-// });
+  if (navMenu.classList.contains("nav-menu_visible")) {
+    navToggle.setAttribute("aria-label", "Cerrar menú");
+  } else {
+    navToggle.setAttribute("aria-label", "Abrir menú");
+  }
+});
+//efecto de scroll en header
+window.addEventListener('scroll', function() {
+  var header = document.querySelector('header');
+  if (window.scrollY >= 100) {
+    header.classList.add('small');
+  } else {
+    header.classList.remove('small');
+  }
+});
 
 
 // Script Jorge
 window.addEventListener("load", e => console.log("app.js connected.")
   );
   
-let sendBtn = document.getElementById("sendBtn");
 let clearBtn = document.getElementById("clearBtn");
 
-sendBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    console.log("boton Enviar Presionado")
+// sendBtn.addEventListener("click", (e) => {
+//     e.preventDefault();
+//     console.log("boton Enviar Presionado")
+//   const name = document.getElementById("inputNombre").value;
+//   const message = document.getElementById("inputMessage").value;
+//   console.log(name);
+//   console.log(message);
+// });
 
+const btn = document.getElementById('button');
 
-  const name = document.getElementById("inputNombre").value;
-  const message = document.getElementById("inputMessage").value;
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
 
-  console.log(name);
-  console.log(message);
+   btn.value = 'Sending...';
 
+   const serviceID = 'default_service';
+   const templateID = 'template_23arrod';
 
-
-
-
-
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
 });
+
+
 
 clearBtn.addEventListener("click", (e) => {
     // declaro inputs
