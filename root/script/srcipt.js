@@ -19,3 +19,36 @@ window.addEventListener('scroll', function() {
     header.classList.remove('small');
   }
 });
+
+
+// Script Jorge
+window.addEventListener("load", e => console.log("app.js connected.")
+  );
+  
+let sendBtn = document.getElementById("sendBtn");
+let clearBtn = document.getElementById("clearBtn");
+
+sendBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log("boton Enviar Presionado")
+});
+
+clearBtn.addEventListener("click", (e) => {
+    // declaro inputs
+    let inputNombre = document.getElementById("inputNombre");
+    let inputEmail = document.getElementById("inputEmail");
+    let inputCelphone = document.getElementById("inputCelphone")
+    let inputMessage = document.getElementById("inputMessage")
+    e.preventDefault();
+    console.log("boton borrar Presionado");
+
+    // clear all inputs
+    inputNombre.value = "";
+    inputEmail.value = "";
+    inputMessage.value = "";
+    inputCelphone.value = "";
+
+// agregar aqui una notificacion
+
+});
+

@@ -235,3 +235,85 @@ text-align: center;
 
   /* height: 20%; */
 }
+
+
+#formContainer {
+  width: 90%;
+  margin: 5%;
+  border: 1px solid salmon;
+  border-radius: 5px;
+  background-color: black;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+
+}
+
+#formTitle {
+  margin: 10%;
+  text-align: center;
+  color: brown;
+  font-size: 1.5em;
+  font-weight: 600;
+
+}
+
+#formFieldContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.formBlocks {
+  display: block;
+  width: 90%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.formLabels {
+  margin-top: 4%;
+}
+
+
+.formImputs {
+  background-color: silver;
+  padding-left: 1px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: none;
+  color: midnightblue;
+  border-bottom: 1px solid black;
+}
+
+.formImputs::placeholder {
+  color: red;
+}
+
+#formButtonsContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.formBtn{
+  width: 35%;
+  height: 2.5em;
+  border: 1px solid red;
+  border-radius: 5px;
+  text-align: center;
+  margin: 5%;
+}
+
+#clearBtn {
+  background-color: orange;
+}
+
+#sendBtn {
+  background-color: green;
+}

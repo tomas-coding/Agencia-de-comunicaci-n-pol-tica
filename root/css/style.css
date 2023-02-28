@@ -19,3 +19,13 @@
 .principal-menu {
     flex-wrap: wrap;
 }
+
+/* Estilos Css Jorge */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* background-color: turquoise; */
+}
+
+
