@@ -187,11 +187,8 @@
         </div>
         <div id="formButtonsContainer">
 
-          <input type="submit" value="ENVIAR">
+          <input type="submit" id="button" value="Send Email" >
 
-<!-- 
-          <button class="formBtn" id="clearBtn">clear</button>
-          <button class="formBtn" id="sendBtn">send</button> -->
         </div>
       </form>
     </section>
@@ -218,5 +215,11 @@
     <!-- FOOTER-->
     <!-- referencias JavasScript-->
     <script src="./script/srcipt.js"></script>
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('40chq3BTebSnuNzJS')
+</script>
   </body>
 </html>

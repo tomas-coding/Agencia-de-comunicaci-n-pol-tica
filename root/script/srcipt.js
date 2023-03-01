@@ -25,26 +25,39 @@ window.addEventListener('scroll', function() {
 window.addEventListener("load", e => console.log("app.js connected.")
   );
   
-let sendBtn = document.getElementById("sendBtn");
 let clearBtn = document.getElementById("clearBtn");
 
-sendBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    console.log("boton Enviar Presionado")
+// sendBtn.addEventListener("click", (e) => {
+//     e.preventDefault();
+//     console.log("boton Enviar Presionado")
+//   const name = document.getElementById("inputNombre").value;
+//   const message = document.getElementById("inputMessage").value;
+//   console.log(name);
+//   console.log(message);
+// });
 
+const btn = document.getElementById('button');
 
-  const name = document.getElementById("inputNombre").value;
-  const message = document.getElementById("inputMessage").value;
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
 
-  console.log(name);
-  console.log(message);
+   btn.value = 'Sending...';
 
+   const serviceID = 'default_service';
+   const templateID = 'template_23arrod';
 
-
-
-
-
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
 });
+
+
 
 clearBtn.addEventListener("click", (e) => {
     // declaro inputs
