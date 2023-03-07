@@ -19,6 +19,27 @@ window.addEventListener('scroll', function() {
     header.classList.remove('small');
   }
 });
+// prueba de efectos scroll
+const elementosAnimados = document.querySelectorAll('.fade-in');
+
+const opcionesDeObservacion = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.4
+};
+
+const observador = new IntersectionObserver(function(entries, observador) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animacion-activada');
+      observador.unobserve(entry.target);
+    }
+  });
+}, opcionesDeObservacion);
+
+elementosAnimados.forEach(elemento => {
+  observador.observe(elemento);
+});
 
 
 // Script Jorge
@@ -77,4 +98,8 @@ clearBtn.addEventListener("click", (e) => {
 // agregar aqui una notificacion
 
 });
+
+
+
+
 
