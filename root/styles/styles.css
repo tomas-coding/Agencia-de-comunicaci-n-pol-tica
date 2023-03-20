@@ -241,32 +241,27 @@ text-align: center;
 #formContainer {
   width: 90%;
   margin: 5%;
-  border: 1px solid salmon;
-  border-radius: 5px;
-  background-color: black;
+  border-radius: 10px;
+  background-color:#6f859b;
 }
 
 #form {
   display: flex;
   flex-direction: column;
-  border: 1px solid;
-
 }
 
 #formTitle {
   margin: 10%;
   text-align: center;
-  color: brown;
-  font-size: 1.5em;
+  color:#020201;
+  font-size: 1.8em;
   font-weight: 600;
-
 }
 
 #formFieldContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid red;
 }
 
 .formBlocks {
@@ -278,46 +273,43 @@ text-align: center;
 
 .formLabels {
   margin-top: 4%;
+  color: #102501;
 }
 
 
 .formImputs {
-  background-color: silver;
-  padding-left: 1px;
+  background-color: #c2c5cb;
+  padding-left: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
   border: none;
+  border-radius: 5px;
   color: midnightblue;
-  border-bottom: 1px solid black;
 }
 
 .formImputs::placeholder {
-  color: red;
+  color: #102501;
+  font-style: italic;
 }
 
 #formButtonsContainer{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
+  justify-content: flex-end;
 }
 
-.formBtn{
+#formButton{
   width: 35%;
-  height: 2.5em;
-  border: 1px solid red;
+  height: 30px;
+  background-color: #d3e29d;
+  color: #102501;
   border-radius: 5px;
   text-align: center;
   margin: 5%;
 }
 
-#clearBtn {
-  background-color: orange;
-}
 
-#sendBtn {
-  background-color: green;
-}
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
