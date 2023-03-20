@@ -13,6 +13,7 @@ body {
   /* background-color:#7f8c8d; */
   color: white;
   height: 100%;
+  background-color: black;
 
 }
 
@@ -96,6 +97,7 @@ body {
 
   .header {
     height: 60px;
+    z-index: 2;
   }
 
   .logo {
@@ -161,7 +163,7 @@ color: #7f8c8d;
 }
 
 .title{
-  height: 800px;
+  height: 600px;
   padding: 100px 10vw;
 }
 .card_productora {
@@ -174,6 +176,7 @@ header.small {
   background-color: #7f8c8d;
   font-size: 10px;
 }
+
 /* estilos para para card de quien somos */
 .card_about_us{
   display: flex;
@@ -186,9 +189,10 @@ header.small {
     background-color: #A08344;
     border-radius: 15px;
     color: white;
+    z-index: 2;
     
     position: relative;
-    bottom: 150px;
+    bottom: 200px;
 
 }
 .card_about_us hr {
@@ -206,8 +210,9 @@ header.small {
     color: #7f8c8d;
     font-size: 25px;
     height: 100%;
-    margin: 50px 5vw;
-    }
+    position:relative;
+    bottom: 300px;
+        }
 .card_what_we_do {
   justify-content: space-evenly;
   align-items: center;

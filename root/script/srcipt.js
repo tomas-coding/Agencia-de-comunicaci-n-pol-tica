@@ -19,13 +19,14 @@ window.addEventListener('scroll', function() {
     header.classList.remove('small');
   }
 });
+
 // prueba de efectos scroll
 const elementosAnimados = document.querySelectorAll('.fade-in');
 
 const opcionesDeObservacion = {
   root: null,
   rootMargin: '0px',
-  threshold: 0.4
+  threshold: 0.6
 };
 
 const observador = new IntersectionObserver(function(entries, observador) {
