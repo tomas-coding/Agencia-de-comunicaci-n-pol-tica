@@ -229,7 +229,7 @@ header.small {
     background-color: black;
     flex-direction: column;
     align-items: center;
-    color: #7f8c8d;
+    color: #a1aaab;
     font-size: 25px;
     height: 100%;
     position:relative;
@@ -242,7 +242,7 @@ header.small {
   align-items: center;
   /* height: 20vh; */
   padding: 30px 5vw;
-  color: white;  
+  color: #a1aaab;  
   height: 100%;
 }
 
@@ -345,3 +345,4 @@ text-align: center;
   transform: translateY(0);
 }
 
+/* FOOTER */
