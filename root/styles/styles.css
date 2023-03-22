@@ -166,10 +166,32 @@ color: #7f8c8d;
   height: 600px;
   padding: 100px 10vw;
 }
+
+
+.buttonContact{
+  background-color: rgba(128, 128, 128, 0.265);
+  border-color: rgba(128, 128, 128, 0.265);
+  width: 200px;
+  border-radius: 5px;
+  text-align: center;
+  color: rgb(143, 142, 142);
+  font-weight: 510;
+
+  font-size: 20px;
+  margin: 30px 2px;
+  padding: 10px 15px;
+  
+}
+.buttonContact:hover{
+  background-color: #9e751c70;
+  color: white;
+}
 .card_productora {
 font-size: 25px;
 text-align: center;
 }
+
+
 
 /* estilos para header en efecto scroll */
 header.small {
@@ -212,7 +234,9 @@ header.small {
     height: 100%;
     position:relative;
     bottom: 300px;
-        }
+    margin-top: 200px;
+
+    }
 .card_what_we_do {
   justify-content: space-evenly;
   align-items: center;
