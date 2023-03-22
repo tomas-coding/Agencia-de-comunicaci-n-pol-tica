@@ -1,6 +1,6 @@
 const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".nav-menu");
-
+const icon = document.querySelector(".fa-bars")
 navToggle.addEventListener("click", () => {
   navMenu.classList.toggle("nav-menu_visible");
 
@@ -10,6 +10,20 @@ navToggle.addEventListener("click", () => {
     navToggle.setAttribute("aria-label", "Abrir menú");
   }
 });
+//cambio de icono en header
+function toggleBurgerIcon() {
+  var burguerIcon = document.getElementById('burguer_icon');
+  if (burguerIcon.classList.contains('fa-bars')) {
+    burguerIcon.classList.remove('fa-bars');
+    burguerIcon.classList.add('fa-xmark');
+  } else {
+    burguerIcon.classList.remove('fa-xmark');
+    burguerIcon.classList.add('fa-bars');
+  }
+}
+
+document.getElementById('burguer_icon').addEventListener('click', toggleBurgerIcon);
+
 //efecto de scroll en header
 window.addEventListener('scroll', function() {
   var header = document.querySelector('header');
