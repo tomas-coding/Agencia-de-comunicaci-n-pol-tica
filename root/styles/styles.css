@@ -97,7 +97,7 @@ body {
 
   .header {
     height: 60px;
-    z-index: 2;
+    z-index: 4;
   }
 
   .logo {
@@ -115,10 +115,7 @@ body {
     top: 60px;
     width: 100%;
     padding: 20px 0;
-
-    height: calc(100% - 60px);
     overflow-x: auto;
-
     left: 100%;
     transition: left 0.3s;
   }
@@ -343,6 +340,10 @@ text-align: center;
 .animacion-activada {
   opacity: 1;
   transform: translateY(0);
+}
+/* //clases de iconos */
+.fa-xmark{
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 /* FOOTER */
