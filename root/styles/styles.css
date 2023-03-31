@@ -91,6 +91,142 @@ height: 140px;
   display: none;
 }
 
+
+#contactBlock{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+#preFormContainer{
+  border: 1px solid green;
+  width: 45%;
+}
+
+
+#formContainer {
+  width: 45%;
+  border-radius: 10px;
+  background-color:#6f859b;
+  
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+#formTitle {
+  margin: 10%;
+  text-align: center;
+  color:#020201;
+  font-size: 2.8em;
+  font-weight: 600;
+}
+
+#formFieldContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formBlocks {
+  display: block;
+  width: 90%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.formLabels {
+  margin-top: 4%;
+  color: #102501;
+  font-size: 1.5rem;
+}
+
+
+.formImputs {
+  background-color: #c2c5cb;
+  height: 3rem;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: none;
+  border-radius: 5px;
+  color: midnightblue;
+}
+
+.formImputs::placeholder {
+  color: #102501;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+#formButtonsContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#formButton{
+  width: 35%;
+  height: 35%;
+  background-color: #9e751c70;
+  border-color: rgba(128, 128, 128, 0.265);
+  width: 280px;
+  border-radius: 5px;
+  text-align: center;
+  color: black;
+  font-weight: 400;
+  font-size: 30px;
+  margin: 150px 2px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 5%;
+}
+
+#formButton:hover{
+  color: rgba(128, 128, 128, 0.265);
+  background-color: white;
+  color: black;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FIN ESTILO FORMULARIO */
+
+
+
+
+
+
+
+
+
+
 /* MOBILE */
 @media (max-width: 768px) {
 
@@ -141,7 +277,121 @@ height: 140px;
   .nav-toggle:focus:not(:focus-visible) {
     outline: none;
   }
+
+
+#contactBlock {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 }
+
+#preFormContainer {
+  display: none;
+}
+
+
+#formContainer {
+
+  width: 100%;
+  /* margin-left: 5%; */
+  border-radius: 10px;
+  background-color:#6f859b;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+#formTitle {
+  margin: 10%;
+  text-align: center;
+  color:#020201;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+#formFieldContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formBlocks {
+  display: block;
+  width: 90%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.formLabels {
+  margin-top: 4%;
+  color: #102501;
+}
+
+
+.formImputs {
+  background-color: #c2c5cb;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: none;
+  border-radius: 5px;
+  color: midnightblue;
+}
+
+.formImputs::placeholder {
+  color: #102501;
+  font-style: italic;
+}
+
+#formButtonsContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+
+
+#formButton{
+  width: 50%;
+  margin: 15px 20px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border-color: rgba(128, 128, 128, 0.265);
+  color:black;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+}
+
+#formButton:hover{
+  background-color: #9e751c70;
+  color: white;
+  color: black;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* responsive end */
 
 h1 {
   font-size: 70px;
@@ -258,78 +508,6 @@ text-align: center;
  width: 8%;
 
   /* height: 20%; */
-}
-
-
-#formContainer {
-  width: 90%;
-  margin: 5%;
-  border-radius: 10px;
-  background-color:#6f859b;
-}
-
-#form {
-  display: flex;
-  flex-direction: column;
-}
-
-#formTitle {
-  margin: 10%;
-  text-align: center;
-  color:#020201;
-  font-size: 1.8em;
-  font-weight: 600;
-}
-
-#formFieldContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.formBlocks {
-  display: block;
-  width: 90%;
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
-
-.formLabels {
-  margin-top: 4%;
-  color: #102501;
-}
-
-
-.formImputs {
-  background-color: #c2c5cb;
-  padding-left: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border: none;
-  border-radius: 5px;
-  color: midnightblue;
-}
-
-.formImputs::placeholder {
-  color: #102501;
-  font-style: italic;
-}
-
-#formButtonsContainer{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-#formButton{
-  width: 35%;
-  height: 30px;
-  background-color: #d3e29d;
-  color: #102501;
-  border-radius: 5px;
-  text-align: center;
-  margin: 5%;
 }
 
 
