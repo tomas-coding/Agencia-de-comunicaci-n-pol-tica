@@ -36,7 +36,6 @@ body {
 .nav {
   display: flex;
   justify-content: space-between;
-height: 140px;
   max-width: 992px;
   margin: 0 auto;
 }
@@ -291,7 +290,7 @@ height: 140px;
   font-size: 20px;
   margin: 30px 2px;
   padding: 10px 15px;
-  cursor:pointer;
+  cursor:pointer;}
 #contactBlock {
   flex-direction: column;
   justify-content: center;
