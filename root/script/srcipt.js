@@ -1,3 +1,5 @@
+// Codigo de Tomas
+
 const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".nav-menu");
 const icon = document.querySelector(".fa-bars")
@@ -10,7 +12,10 @@ navToggle.addEventListener("click", () => {
     navToggle.setAttribute("aria-label", "Abrir menú");
   }
 });
+
+
 //cambio de icono en header
+
 function toggleBurgerIcon() {
   let burguerIcon = document.getElementById('burguer_icon');
   if (burguerIcon.classList.contains('fa-bars')) {
@@ -57,26 +62,16 @@ elementosAnimados.forEach(elemento => {
 });
 
 
-// Script Jorge
+// ///////////////////////////Script Jorge
 window.addEventListener("load", e => console.log("app.js connected.")
   );
   
-let clearBtn = document.getElementById("clearBtn");
-
-// sendBtn.addEventListener("click", (e) => {
-//     e.preventDefault();
-//     console.log("boton Enviar Presionado")
-//   const name = document.getElementById("inputNombre").value;
-//   const message = document.getElementById("inputMessage").value;
-//   console.log(name);
-//   console.log(message);
-// });
-
-const btn = document.getElementById('button');
+const btn = document.getElementById('formButton');
 
 document.getElementById('form')
  .addEventListener('submit', function(event) {
    event.preventDefault();
+
 
    btn.value = 'Sending...';
 
@@ -85,8 +80,8 @@ document.getElementById('form')
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
-      btn.value = 'Send Email';
-      alert('Sent!');
+      btn.value = 'Enviada';
+
     }, (err) => {
       btn.value = 'Send Email';
       alert(JSON.stringify(err));
@@ -95,24 +90,24 @@ document.getElementById('form')
 
 
 
-clearBtn.addEventListener("click", (e) => {
-    // declaro inputs
-    let inputNombre = document.getElementById("inputNombre");
-    let inputEmail = document.getElementById("inputEmail");
-    let inputCelphone = document.getElementById("inputCelphone")
-    let inputMessage = document.getElementById("inputMessage")
-    e.preventDefault();
-    console.log("boton borrar Presionado");
+// clearBtn.addEventListener("click", (e) => {
+//     // declaro inputs
+//     let inputNombre = document.getElementById("inputNombre");
+//     let inputEmail = document.getElementById("inputEmail");
+//     let inputCelphone = document.getElementById("inputCelphone")
+//     let inputMessage = document.getElementById("inputMessage")
+//     e.preventDefault();
+//     console.log("boton borrar Presionado");
 
-    // clear all inputs
-    inputNombre.value = "";
-    inputEmail.value = "";
-    inputMessage.value = "";
-    inputCelphone.value = "";
+//     // clear all inputs
+//     inputNombre.value = "";
+//     inputEmail.value = "";
+//     inputMessage.value = "";
+//     inputCelphone.value = "";
 
-// agregar aqui una notificacion
+// // agregar aqui una notificacion
 
-});
+// });
 
 
 
