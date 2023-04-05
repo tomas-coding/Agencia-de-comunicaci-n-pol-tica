@@ -12,7 +12,7 @@ navToggle.addEventListener("click", () => {
 });
 //cambio de icono en header
 function toggleBurgerIcon() {
-  var burguerIcon = document.getElementById('burguer_icon');
+  let burguerIcon = document.getElementById('burguer_icon');
   if (burguerIcon.classList.contains('fa-bars')) {
     burguerIcon.classList.remove('fa-bars');
     burguerIcon.classList.add('fa-xmark');
