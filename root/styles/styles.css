@@ -202,30 +202,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* FIN ESTILO FORMULARIO */
-
-
-
-
-
-
-
-
-
-
 /* MOBILE */
 @media (max-width: 768px) {
 
@@ -472,14 +448,15 @@ header.small {
     border-radius: 15px;
     color: white;
     z-index: 2;
+    font-size: 24px;
     
     position: relative;
-    bottom: 200px;
+    bottom: 100px;
 
 }
 .card_about_us hr {
   border: 1px solid white;
-  width: 100%;
+  width: 90%;
 }
 .card_about_us p {
   text-align: center;}
@@ -494,9 +471,10 @@ header.small {
     height: 100%;
     position:relative;
     bottom: 300px;
-    margin-top: 200px;
+    /* margin-top: 100px; */
 
-    }
+  }
+ 
 
 .card_what_we_do {
   justify-content: space-evenly;
@@ -507,10 +485,9 @@ header.small {
   height: 100%;
 }
 
-
 .titles {
-  font-size: 30px;
-  padding: 70px 0px 0px ;
+  font-size: 40px;
+  padding:  0px 0px 20px;
   color: #7f8c8d;
 text-align: center; 
 }
@@ -522,6 +499,9 @@ text-align: center;
   /* height: 20%; */
 }
 
+.subt_que_hacemos {
+  margin: 10px 40px 10px;
+}
 
 .fade-in {
   opacity: 0;
@@ -536,6 +516,16 @@ text-align: center;
 /* //clases de iconos */
 .fa-xmark{
   transition: opacity 0.5s ease-out, transform 1s ease-out;
+}
+
+
+
+
+/* CONTACTO */
+
+#Contacto{
+ margin: 50px 100px 50px;
+ 
 }
 
 /* FOOTER */
