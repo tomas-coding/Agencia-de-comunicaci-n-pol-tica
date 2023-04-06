@@ -73,7 +73,8 @@ document.getElementById('form')
    event.preventDefault();
 
 
-   btn.value = 'Sending...';
+   btn.value = 'enviando...';
+   
 
    const serviceID = 'default_service';
    const templateID = 'template_23arrod';
@@ -87,29 +88,4 @@ document.getElementById('form')
       alert(JSON.stringify(err));
     });
 });
-
-
-
-// clearBtn.addEventListener("click", (e) => {
-//     // declaro inputs
-//     let inputNombre = document.getElementById("inputNombre");
-//     let inputEmail = document.getElementById("inputEmail");
-//     let inputCelphone = document.getElementById("inputCelphone")
-//     let inputMessage = document.getElementById("inputMessage")
-//     e.preventDefault();
-//     console.log("boton borrar Presionado");
-
-//     // clear all inputs
-//     inputNombre.value = "";
-//     inputEmail.value = "";
-//     inputMessage.value = "";
-//     inputCelphone.value = "";
-
-// // agregar aqui una notificacion
-
-// });
-
-
-
-
 
