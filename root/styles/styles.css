@@ -9,7 +9,7 @@
 }
 
 body {
-  
+
   /* background-color:#7f8c8d; */
   color: white;
   height: 100%;
@@ -108,7 +108,7 @@ body {
   width: 45%;
   border-radius: 10px;
   background-color:#6f859b;
-  
+
 }
 
 #form {
@@ -117,9 +117,9 @@ body {
 }
 
 #formTitle {
-  margin: 10%;
+  margin: 5%;
   text-align: center;
-  color:#020201;
+  color:#52524f;
   font-size: 2.8em;
   font-weight: 600;
 }
@@ -135,7 +135,7 @@ body {
   width: 90%;
   margin-top: 1%;
   margin-bottom: 1%;
-}
+ }
 
 .formLabels {
   margin-top: 4%;
@@ -271,7 +271,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 #preFormContainer {
@@ -281,10 +281,11 @@ body {
 
 #formContainer {
 
-  width: 100%;
+  width: 85%;
   /* margin-left: 5%; */
   border-radius: 10px;
-  background-color:#6f859b;
+  background-color: #e3ac377a;
+  ;
 }
 
 #form {
@@ -293,9 +294,9 @@ body {
 }
 
 #formTitle {
-  margin: 10%;
+  margin: 6%;
   text-align: center;
-  color:#020201;
+  color:#9b9b9a;
   font-size: 1.8em;
   font-weight: 600;
 }
@@ -308,14 +309,16 @@ body {
 
 .formBlocks {
   display: block;
-  width: 90%;
+  width: 80%;
   margin-top: 2%;
   margin-bottom: 2%;
+
 }
 
 .formLabels {
   margin-top: 4%;
-  color: #102501;
+  color: #c2c5cb;
+  font-weight: bold;
 }
 
 
@@ -342,17 +345,15 @@ body {
 }
 
 
-
-
 #formButton{
-  width: 50%;
-  margin: 15px 20px;
-  padding: 10px 15px;
-  border-radius: 5px;
+  width: 30%;
+  margin: 20px 30px;
+  padding: 5px 10px;
+  border-radius: 10px;
   border-color: rgba(128, 128, 128, 0.265);
-  color:black;
+  color:#c2c5cb;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -364,7 +365,24 @@ body {
 }
 
 
-
+/* FOOTER */
+.social-media a {
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+.social-media {
+  /* padding-bottom: 50px; */
+}
+.logos {
+  align-items: center;
+  flex-direction: column-reverse;
+  width: 100%;
+  padding: 60px 0px 0px;
+}
+.copyright {
+  position: relative;
+  top: 80px;
+}
 
 
 
@@ -416,7 +434,7 @@ padding: 250px;
   font-size: 30px;
   margin: 150px 2px;
   padding: 10px 15px;
-  
+
 }
 .buttonContact:hover{
   background-color: #9e751c70;
@@ -449,7 +467,7 @@ header.small {
     color: white;
     z-index: 2;
     font-size: 24px;
-    
+
     position: relative;
     bottom: 100px;
 
@@ -474,14 +492,14 @@ header.small {
     /* margin-top: 100px; */
 
   }
- 
+
 
 .card_what_we_do {
   justify-content: space-evenly;
   align-items: center;
   /* height: 20vh; */
   padding: 30px 5vw;
-  color: #a1aaab;  
+  color: #a1aaab;
   height: 100%;
 }
 
@@ -489,7 +507,7 @@ header.small {
   font-size: 40px;
   padding:  0px 0px 20px;
   color: #7f8c8d;
-text-align: center; 
+text-align: center;
 }
 
 .expertisse {
@@ -525,7 +543,28 @@ text-align: center;
 
 #Contacto{
  margin: 50px 100px 50px;
- 
+
+}
+
+.datos_contacto{
+  font-size: 22px;
+  text-align: center;
+  color:#7f8c8d;
+}
+
+.contacto {
+  width: 100%
 }
 
 /* FOOTER */
+/* #footer {
+width: 100%;
+margin: 40px 40px 40px;
+align-content: center;
+}
+
+.social-media{
+  width: 100%;
+  justify-content: space-around;
+  padding: 0vw 5vw;
+} */
