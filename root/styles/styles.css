@@ -529,3 +529,16 @@ text-align: center;
 }
 
 /* FOOTER */
+
+
+/* WHATSAPP BUTTTON */
+
+#whatsappContainer {
+  position: fixed;
+  right: 55px;
+  bottom: 35px;
+}
+
+#whatsappLogo {
+  width: 130%;
+}
