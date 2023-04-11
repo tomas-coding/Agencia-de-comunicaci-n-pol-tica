@@ -370,9 +370,10 @@ body {
   padding-left: 3vw;
   padding-right: 3vw;
 }
-.social-media {
-  /* padding-bottom: 50px; */
-}
+/* .social-media {
+  /* padding-bottom: 50px; 
+} */
+
 .logos {
   align-items: center;
   flex-direction: column-reverse;
@@ -568,3 +569,17 @@ align-content: center;
   justify-content: space-around;
   padding: 0vw 5vw;
 } */
+/* FOOTER */
+
+
+/* WHATSAPP BUTTTON */
+
+#whatsappContainer {
+  position: fixed;
+  right: 55px;
+  bottom: 35px;
+}
+
+#whatsappLogo {
+  width: 130%;
+}
